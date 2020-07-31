@@ -1,0 +1,573 @@
+{
+  "intents": [
+    {
+      "intent": "ترحيب",
+      "examples": [
+        {
+          "text": "اهلا"
+        },
+        {
+          "text": "هلا والله"
+        },
+        {
+          "text": "صباح الخير"
+        },
+        {
+          "text": "هاي"
+        },
+        {
+          "text": "هلا"
+        },
+        {
+          "text": "مساء الخير"
+        },
+        {
+          "text": "سلام"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "معلومات",
+      "examples": [
+        {
+          "text": "من يملك هذا الروبوت؟"
+        },
+        {
+          "text": "ما اسمك؟"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "robot_info",
+      "examples": [
+        {
+          "text": "the robot belong for who?"
+        },
+        {
+          "text": "what is your name?"
+        },
+        {
+          "text": "what is the robot name?"
+        },
+        {
+          "text": "who is own this robot?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "hi",
+      "examples": [
+        {
+          "text": "how are you?"
+        },
+        {
+          "text": "whatsapp?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "robot_orders",
+      "examples": [
+        {
+          "text": "go right"
+        },
+        {
+          "text": "stop"
+        },
+        {
+          "text": "i want you to stop"
+        },
+        {
+          "text": "i want you to go to backward"
+        },
+        {
+          "text": "i want you to go to forward"
+        },
+        {
+          "text": "i want you to go to the left"
+        },
+        {
+          "text": "what can the robot do?"
+        },
+        {
+          "text": "go left"
+        },
+        {
+          "text": "go forward"
+        },
+        {
+          "text": "i want you to go to the right"
+        },
+        {
+          "text": "go backward"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "أوامر",
+      "examples": [
+        {
+          "text": "وقف"
+        },
+        {
+          "text": "اذهب الى الأمام"
+        },
+        {
+          "text": "قف"
+        },
+        {
+          "text": "اذهب الى الخلف"
+        },
+        {
+          "text": "اذهب الى اليمين"
+        },
+        {
+          "text": "اذهب الى اليسار"
+        },
+        {
+          "text": "توقف"
+        },
+        {
+          "text": "روح يمين"
+        },
+        {
+          "text": "روح ورا"
+        },
+        {
+          "text": "روح يسار"
+        },
+        {
+          "text": "امشي قدام"
+        },
+        {
+          "text": "ستوب"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "hi"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hello"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "حال",
+      "examples": [
+        {
+          "text": "شخبارك"
+        },
+        {
+          "text": "ايش اخبارك؟"
+        },
+        {
+          "text": "وش علومك؟"
+        },
+        {
+          "text": "كيف الحال؟"
+        },
+        {
+          "text": "كيف حالك؟"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "ترحيب",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "هلا",
+          "synonyms": [
+            "اهلا",
+            "هاي",
+            "هلا والله ",
+            "مرحبا",
+            "اهلين",
+            "سلام",
+            "سلام عليكم",
+            "السلام عليكم"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "معلومات",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "من يملك هذا الروبوت؟",
+          "synonyms": [
+            "من يملك هذا الآلي؟",
+            "انت حق مين؟",
+            "مين مديرك؟",
+            "ايش اسم شركتك",
+            "ما اسم الشركة الخاصة بك؟"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ما اسمك",
+          "synonyms": [
+            "ايش اسمك",
+            "انت مين "
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greeting",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "greeting",
+          "synonyms": [
+            "hello",
+            "hey ",
+            "hi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "أوامر",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "يسار",
+          "synonyms": [
+            "شمال"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "قف",
+          "synonyms": [
+            "وقوف",
+            "ستوب",
+            "وقف",
+            "توقف"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "اذهب",
+          "synonyms": [
+            "روح",
+            "امشي",
+            "تحرك"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "الأمام",
+          "synonyms": [
+            "قدام ",
+            "تقدم"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "الخلف",
+          "synonyms": [
+            "ورا",
+            "وراء",
+            "رجوع"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "webhooks": [
+    {
+      "url": "",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "okay"
+              },
+              {
+                "text": "Rightnow "
+              },
+              {
+                "text": "Okay, I will"
+              },
+              {
+                "text": "I`m going "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#robot_orders",
+      "dialog_node": "node_8_1596069200373",
+      "previous_sibling": "node_10_1595929153706"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I`m good, Thank you."
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#hi",
+      "dialog_node": "node_4_1596156286062",
+      "previous_sibling": "node_7_1596156468704"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "الحمدلله بخير، تسلم"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#حال",
+      "dialog_node": "node_7_1596156468704",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "اسمي هو DUA :)!"
+              },
+              {
+                "text": "أنا أنتمي الى شركة الأساليب الذكية"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#معلومات",
+      "dialog_node": "node_8_1596152023214",
+      "previous_sibling": "node_4_1596156286062"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "hello! how can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "@greeting",
+      "dialog_node": "node_10_1595929153706",
+      "previous_sibling": "node_1_1596054536595"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "أهلًا بك! تفضل كيف أقدر أساعدك؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@ترحيب",
+      "dialog_node": "node_1_1596054536595",
+      "previous_sibling": "node_5_1596069909824"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_8_1596069200373",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I`m Dua!"
+              },
+              {
+                "text": "I belong to The SmartMethod Co. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#robot_info && #robot_info",
+      "dialog_node": "node_7_1596072570696",
+      "previous_sibling": "node_8_1596152023214"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "حسنًا"
+              },
+              {
+                "text": "حاضر"
+              },
+              {
+                "text": "أبشر"
+              },
+              {
+                "text": "في الحال"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#أوامر && @أوامر",
+      "dialog_node": "node_5_1596069909824",
+      "previous_sibling": "node_7_1596072570696"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello! I`m Dua How can I help you? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "DUA is here",
+  "language": "en",
+  "description": ""
+}
